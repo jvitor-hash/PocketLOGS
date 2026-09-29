@@ -1,4 +1,6 @@
-# PocketLOGS-char-10.66M-Base
+![PocketLOGS](ascii-art-text.png)
+
+### PocketLOGS-char-10.66M-Base
 
 ## Description
 This is an experimental model used as a learning exercise. Use at your own caution.
