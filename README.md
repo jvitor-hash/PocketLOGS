@@ -1,51 +1,41 @@
- ███████████                    █████                █████    █████          ███████      █████████   █████████ 
-▒▒███▒▒▒▒▒███                  ▒▒███                ▒▒███    ▒▒███         ███▒▒▒▒▒███   ███▒▒▒▒▒███ ███▒▒▒▒▒███
- ▒███    ▒███  ██████   ██████  ▒███ █████  ██████  ███████   ▒███        ███     ▒▒███ ███     ▒▒▒ ▒███    ▒▒▒ 
- ▒██████████  ███▒▒███ ███▒▒███ ▒███▒▒███  ███▒▒███▒▒▒███▒    ▒███       ▒███      ▒███▒███         ▒▒█████████ 
- ▒███▒▒▒▒▒▒  ▒███ ▒███▒███ ▒▒▒  ▒██████▒  ▒███████   ▒███     ▒███       ▒███      ▒███▒███    █████ ▒▒▒▒▒▒▒▒███
- ▒███        ▒███ ▒███▒███  ███ ▒███▒▒███ ▒███▒▒▒    ▒███ ███ ▒███      █▒▒███     ███ ▒▒███  ▒▒███  ███    ▒███
- █████       ▒▒██████ ▒▒██████  ████ █████▒▒██████   ▒▒█████  ███████████ ▒▒▒███████▒   ▒▒█████████ ▒▒█████████ 
-▒▒▒▒▒         ▒▒▒▒▒▒   ▒▒▒▒▒▒  ▒▒▒▒ ▒▒▒▒▒  ▒▒▒▒▒▒     ▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒▒    ▒▒▒▒▒▒▒      ▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒  
+# PocketLOGS-char-10.66M-Base
 
----
-
-# Description
-This is a experimental model used as a learning excersize use at your own caution. 
+## Description
+This is an experimental model used as a learning exercise. Use at your own caution.
 Some of the logs generated can be cut off due to the small context length.
 
-# Model information
+## Model information
 
-Model name: PocketLOGS-char-10.66M-Base
-Context length: 256
-Vocabulary size: 91
-Trained dataset: (Loghub)[https://github.com/logpai/loghub] (Apache, Linux, Mac, Proxifier)
-Tool used to train: (nanoGPT)[https://github.com/karpathy/nanoGPT]
-Version: v1
-Date of training: 2026-09-29
-Iterations training: 700
-
----
+| Field | Value |
+| --- | --- |
+| Model name | PocketLOGS-char-10.66M-Base |
+| Context length | 256 |
+| Vocabulary size | 91 |
+| Trained dataset | [Loghub](https://github.com/logpai/loghub) (Apache, Linux, Mac, Proxifier) |
+| Tool used to train | [nanoGPT](https://github.com/karpathy/nanoGPT) |
+| Version | v1 |
+| Date of training | 2026-09-29 |
+| Iterations training | 700 |
 
 ## Training Summary
 
-training time: 2hrs (due to some technical dificulties)
+Training time: 2hrs (due to some technical difficulties)
 
-Iter | Train  | Val    | Gap
-100  | 2.4794 | 2.5059 | +0.027
-200  | 1.6485 | 1.8839 | +0.235
-300  | 0.9945 | 1.1639 | +0.169
-400  | 0.6002 | 0.8784 | +0.278
-500  | 0.3690 | 0.7107 | +0.342
-600  | 0.2578 | 0.6572 | +0.399
-700  | 0.2053 | 0.6190 | +0.414
+| Iter | Train | Val | Gap |
+| ---: | ---: | ---: | ---: |
+| 100 | 2.4794 | 2.5059 | +0.027 |
+| 200 | 1.6485 | 1.8839 | +0.235 |
+| 300 | 0.9945 | 1.1639 | +0.169 |
+| 400 | 0.6002 | 0.8784 | +0.278 |
+| 500 | 0.3690 | 0.7107 | +0.342 |
+| 600 | 0.2578 | 0.6572 | +0.399 |
+| 700 | 0.2053 | 0.6190 | +0.414 |
 
----
-
-# Model Usage
+## Model Usage
 
 ```bash
 $ python -m venv .venv
-$ source .venv/bin/activate # Depends on your system
+$ source .venv/bin/activate  # Depends on your system
 $ pip3 install -r requirements.txt
 $ python3 inference.py
 ```
@@ -77,7 +67,6 @@ $ python inference.py \
 --seed N            Random seed for reproducibility   (default: None)
 ```
 
-
 ### Typical output
 
 ```text
@@ -87,8 +76,6 @@ $ python inference.py \
 
 --- sample 1 ---
 ```
-
----
 
 ## Configuration used for training
 
@@ -129,6 +116,6 @@ log_interval = 10
 
 # System
 device = 'cuda'
-dtype = 'float32'      
-compile = True         
+dtype = 'float32'
+compile = True
 ```
